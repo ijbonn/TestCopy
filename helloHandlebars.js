@@ -20,7 +20,7 @@ function getRando(){
   return valToDisplay;
 }
 
-app.get('/rando',function(req,res){
+app.get('/rando-page',function(req,res){
   res.render('rando-page', getRando());
 });
 
