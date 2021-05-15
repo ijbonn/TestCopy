@@ -15,6 +15,14 @@ app.get('/other-page',function(req,res){
   res.render('other-page');
 });
 
+function getRando(){
+  var valToDisplay = math.random();
+  return valToDisplay;
+}
+
+app.get('/rando',function(req,res){
+  res.render('rando-page', getRando());
+});
 
 function genContext(){
   var stuffToDisplay = {};
