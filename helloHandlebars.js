@@ -16,8 +16,7 @@ app.get('/other-page',function(req,res){
 });
 
 function getRando(){
-  var valToDisplay = Math.random();
-  return valToDisplay;
+  return Math.random();
 }
 
 app.get('/rando-page',function(req,res){
