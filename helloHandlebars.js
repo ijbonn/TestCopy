@@ -21,7 +21,7 @@ app.get('/test-page',function(req,res){
 
 function getRando(){
   var valToDisplay = {};
-  valToDisplay.rando = (new Math.random());
+  valToDisplay.rando = Math.random();
   return valToDisplay;
 }
 
