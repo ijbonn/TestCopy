@@ -15,6 +15,10 @@ app.get('/other-page',function(req,res){
   res.render('other-page');
 });
 
+app.get('/test-page',function(req,res){
+  res.render('test-page');
+});
+
 function getRando(){
   return Math.random();
 }
