@@ -20,7 +20,9 @@ app.get('/test-page',function(req,res){
 });
 
 function getRando(){
-  return Math.random();
+  var valToDisplay = {};
+  valToDisplay.rando = (new Math.random());
+  return valToDisplay;
 }
 
 app.get('/rando-page',function(req,res){
