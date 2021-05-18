@@ -82,6 +82,18 @@ app.get('/get-loopback-table',function(req,res){
   res.render('get-loopback-table', context);
 });
 
+app.post('/get-loopback-table', function(req,res){
+  var qParams = [];
+  for (var p in req.query){
+    qParams.push({'name':p,'value':req.query[p]})
+  }
+  var context = {};
+  context.reqType = 'POST';
+  context.dataList = qParams;
+  res.render('get-loopback-table', context);
+});
+
+
 app.post('/post-loopback', function(req,res){
   var qParams = [];
   for (var p in req.body){
