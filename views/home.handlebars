@@ -18,7 +18,7 @@ document.getElementById('binSubmit').addEventListener('click',function(event){
   var loadValue = document.getElementById('binValue').value;
   var payload = {};
   payload[loadKey] = loadValue;
-  req.open('POST', 'http://httpbin.org/post', true);
+  req.open('POST', 'http://http://flip3.engr.oregonstate.edu:4491/post-loopback', true);
   req.setRequestHeader('Content-Type', 'application/json');
   req.addEventListener('load',function(){
     if(req.status >= 200 && req.status < 400){
