@@ -1,3 +1,14 @@
+<form>
+  <fieldset>
+    <legend>HTTP Bin POST Request</legend>
+    <span>Enter a key-value pair to return as a JSON. For fun?</span><br>    
+    <span>Key: </span><input type="text" name="binKey" id="binKey">
+    <span> Value: </span><input type="text" name="binValue" id="binValue"><br>
+    <input type="submit" id="binSubmit">
+    <span id="binOutput"></span>
+  </fieldset>
+</form>
+
 <h1>You sent the following data in a POST request:</h1>
 <ul>
   {{#each dataList}}
