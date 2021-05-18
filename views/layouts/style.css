@@ -1,0 +1,35 @@
+table{
+    border-style:solid;
+    text-align:center;
+}
+
+th, td{
+    border-style:solid;
+}
+
+tbody tr:nth-child(even){
+  background:lightblue;
+}
+
+tbody tr:nth-child(odd){
+  background:pink;
+}
+
+tbody th{
+  font-weight:normal;
+  font-style:italic;
+}
+
+.outer-content{
+  background-color:pink;
+  width:75%;
+  top:20px;
+}
+
+.inner-content{
+  background-color:lightblue;
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
