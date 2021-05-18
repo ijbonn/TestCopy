@@ -39,6 +39,12 @@ app.get('/time',function(req,res){
   res.render('time', genContext());
 });
 
+app.get('/show-data',function(req,res){
+  var context = {};
+  context.sentData = req.query.myData;
+  res.render('show-data', context);
+});
+
 app.use(function(req,res){
   res.status(404);
   res.render('404');
