@@ -83,6 +83,10 @@ app.post('/post-loopback', function(req,res){
   res.render('post-loopback', context);
 });
 
+app.post('/post-test', function(req,res){
+  res.send('This is a test!');
+});
+
 app.use(function(req,res){
   res.status(404);
   res.render('404');
