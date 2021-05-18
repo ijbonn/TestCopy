@@ -70,7 +70,7 @@ app.get('/get-loopback-improved',function(req,res){
   context.dataList = qParams;
   res.render('get-loopback-improved', context);
 });
-
+/*
 app.get('/get-loopback-table',function(req,res){
   var qParams = [];
   for (var p in req.query){
@@ -81,7 +81,7 @@ app.get('/get-loopback-table',function(req,res){
   context.dataList = qParams;
   res.render('get-loopback-table', context);
 });
-
+*/
 app.post('/get-loopback-table', function(req,res){
   var qParams = [];
   for (var p in req.query){
