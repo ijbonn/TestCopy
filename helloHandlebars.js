@@ -84,8 +84,8 @@ app.get('/get-loopback-table',function(req,res){
 
 app.post('/get-loopback-table', function(req,res){
   var qParams = [];
-  for (var p in req.query){
-    qParams.push({'name':p,'value':req.query[p]})
+  for (var p in req.body){
+    qParams.push({'name':p,'value':req.body[p]})
   }
   var context = {};
   context.reqType = 'POST';
